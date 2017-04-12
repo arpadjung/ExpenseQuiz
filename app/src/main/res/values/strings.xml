@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">The Expanse Quiz</string>
+    <string name="hello">"This is a very simple quiz, to test your knowledge about the series The Expanse! Don't forget to anwser all questions and then get a grade! Okay lets start :) !"</string>
+    <string name="firstq">"1. Lets start with an easy one: What is your name?"</string>
+    <string name="secondq">"2. What is the main factions name?"</string>
+    <string name="thirdq">"3. What OPA mean?"</string>
+    <string name="fourthq">"4. What was the Rocinante real name?"</string>
+    <string name="fifthq">"5. What was the nem who became the seed crystal?"</string>
+    <string name="sixthq">"6. What was the Donanger?"</string>
+    <string name="seventhq">"7. What was the Tycho station?"</string>
+    <string name="eighthq">"8. Earth must come..."</string>
+    <string name="ninthq">"9.Which relegius ship has been stolen?"</string>
+    </resources>

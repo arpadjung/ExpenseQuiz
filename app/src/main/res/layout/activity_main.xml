@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.expansequiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6eae6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <TextView
+                style="@style/centerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTitleBackground"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/colorTitleText"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/matchParentStyle"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <TextView
+                style="@style/wrapContentStyle"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="Hey there,"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/hello" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/firstq" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/secondq" />
+
+                <CheckBox
+                    android:id="@+id/first_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="Mars"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/second_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="United States (USA)"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/third_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="OPA"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/fourth_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="United Nations (UN)"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/thirdq" />
+
+                <EditText
+                    android:id="@+id/opa_meaning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/fourthq" />
+
+                <EditText
+                    android:id="@+id/rocinante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/fifthq" />
+
+                <EditText
+                    android:id="@+id/julie_mao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/sixthq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        style="@style/RadioGroup"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="24dp">
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="Station" />
+
+                        <RadioButton
+                            android:id="@+id/donanger_warship"
+                            style="@style/RadioButton"
+                            android:text="Warship" />
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="Bomber" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/seventhq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        style="@style/RadioGroup"
+                        android:layout_marginLeft="24dp">
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="Military Station" />
+
+                        <RadioButton
+                            android:id="@+id/tycho_shipyard"
+                            style="@style/RadioButton"
+                            android:text="Shipyard" />
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="Science Station" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/eighthq" />
+
+                <RadioGroup style="@style/RadioGroup">
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="...again." />
+
+                    <RadioButton
+                        android:id="@+id/earth_come_first"
+                        style="@style/RadioButton"
+                        android:text="...first." />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/ninthq" />
+
+                <RadioGroup style="@style/RadioGroup">
+
+                    <RadioButton
+                        android:id="@+id/mormon"
+                        style="@style/RadioButton"
+                        android:text="Mormon" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="Christian" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="Chatolic" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                style="@style/matchParentStyle"
+                android:layout_gravity="center_horizontal">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/score_button"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="showScore"
+                    android:padding="15dp"
+                    fancy:fb_borderColor="#1A237E"
+                    fancy:fb_borderWidth="3dp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#1E88E5"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="SUBMIT ANSWERS"
+                    fancy:fb_textColor="#1A237E" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
